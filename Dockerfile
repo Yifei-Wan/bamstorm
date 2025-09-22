@@ -25,5 +25,8 @@ COPY src ./src
 COPY Cargo.toml .
 COPY Cargo.lock .
 
+# Copy Test files
+COPY tests ./tests
+
 # Default to bash (interactive)
 CMD ["/bin/bash"]
